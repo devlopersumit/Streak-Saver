@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 //Database Connection
 connectDB();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 5000;
 app.listen(port, ()=>{
     console.log(`Server is running succcessfully on server ${port}`)
 });
